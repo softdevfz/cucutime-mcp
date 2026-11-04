@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cucutime": {
+      "type": "http",
+      "url": "https://cucutime.org/mcp"
+    }
+  }
+}

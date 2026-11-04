@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "org.cucutime/mcp",
+  "title": "Cucutime Kids Songs",
+  "description": "Kids-song ideas, name pages and CucuTime video search (no AI); AI song trial for adult apps.",
+  "version": "1.0.1",
+  "websiteUrl": "https://cucutime.org/developers",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cucutime.org/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. \"Bearer <developer key>\" for the AI tools create_personalized_song and moderate_kids_text, which are for adult-facing apps only (parents, teachers); free trial key at websiteUrl. The keyless tools (generate_song_idea, get_song_for_name, search_catalog) use no AI and need no header.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "publisher": "Cucutime (BrainyStack LLC)",
+      "openapi": "https://cucutime.org/api/openapi.json",
+      "llmsTxt": "https://cucutime.org/llms.txt",
+      "termsOfService": "https://cucutime.org/developers/terms",
+      "privacyPolicyUrl": "https://cucutime.org/privacy"
+    }
+  },
+  "repository": {
+    "url": "https://github.com/softdevfz/cucutime-mcp",
+    "source": "github"
+  }
+}
